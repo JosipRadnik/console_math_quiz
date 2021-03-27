@@ -15,7 +15,7 @@ double promptDouble() {
 void main() {
   List<String> friends = ['Joe', 'Joey', 'Joseph'];
 
-  for (int i = 0; i < friends.length; i++) {
-    print(friends[i]);
+  for (String friend in friends) {
+    print(friend.toUpperCase());
   }
 }
