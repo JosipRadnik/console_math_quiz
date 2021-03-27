@@ -1,7 +1,7 @@
 import 'dart:io';
 
-String promptText(String promptText) {
-  print('${promptText}');
+String promptText(String prompt) {
+  print('${prompt}');
   var answer = stdin.readLineSync();
   return answer;
 }
@@ -13,5 +13,9 @@ double promptDouble() {
 }
 
 void main() {
-  
+  List<String> friends = ['Joe', 'Joey', 'Joseph'];
+
+  for (int i = 0; i < friends.length; i++) {
+    print(friends[i]);
+  }
 }
