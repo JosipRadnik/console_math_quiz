@@ -28,6 +28,7 @@ void main() {
     MathQuestions('100 * 9', 900.0)
   ];
 
-  print(questions[0].question);
-  print(questions[0].answer);
+  for (MathQuestions mathQuestion in questions) {
+    print(mathQuestion.question);
+  }
 }
