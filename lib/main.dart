@@ -12,21 +12,18 @@ double promptDouble() {
   return myNumber;
 }
 
-void triangle(int numTriangle) {
-  for (int i = 0; i < numTriangle; i++){
-    print('   /|');
-    print('  / |');
-    print(' /  |');
-    print('/___|');
-  }
+class Book {
+  var title;
+  var author;
+  var numPages;
 }
 
 void main() {
-  List<String> friends = ['Joe', 'Joey', 'Joseph'];
+  Book lotr = Book();
 
-  for (String friend in friends) {
-    print(friend.toUpperCase());
-  }
+  lotr.title = 'Fellowship';
+  lotr.author = 'JRRT';
+  lotr.numPages = 554;
 
-  triangle(5);
+  print(lotr.title);
 }
