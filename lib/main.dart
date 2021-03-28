@@ -13,17 +13,21 @@ double promptDouble() {
 }
 
 class Book {
+  Book(var title_, var author_, var numPages_) {
+    this.title = title_;
+    this.author = author_;
+    this.numPages = numPages_;
+  }
+
   var title;
   var author;
   var numPages;
 }
 
 void main() {
-  Book lotr = Book();
-
-  lotr.title = 'Fellowship';
-  lotr.author = 'JRRT';
-  lotr.numPages = 554;
+  Book lotr = Book('Fellowship', 'JRRT', 554);
 
   print(lotr.title);
+  print(lotr.author);
+  print(lotr.numPages);
 }
