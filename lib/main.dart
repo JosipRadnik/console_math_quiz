@@ -12,24 +12,22 @@ double promptDouble() {
   return myNumber;
 }
 
-class Student {
-  var name;
-  var gpa;
-
-  Student(name_, gpa_) {
-    this.name = name_;
-    this.gpa = gpa_;
-  }
-
-  hasHonors() {
-    return this.gpa >= 3.5;
+class MathQuestions {
+  var question;
+  var answer;
+  MathQuestions(var question_, var answer_) {
+    this.question = question_;
+    this.answer = answer_;
   }
 }
 
 void main() {
-  Student joe = Student('Joe', 2.54);
-  Student jolene = Student('Jolene', 3.95);
+  List<MathQuestions> questions = [
+    MathQuestions('3 + 5', 8.0),
+    MathQuestions('10 - 7', 3.0),
+    MathQuestions('100 * 9', 900.0)
+  ];
 
-  print(joe.hasHonors());
-  print(jolene.hasHonors());
+  print(questions[0].question);
+  print(questions[0].answer);
 }
