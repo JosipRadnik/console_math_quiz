@@ -12,22 +12,24 @@ double promptDouble() {
   return myNumber;
 }
 
-class Book {
-  Book(var title_, var author_, var numPages_) {
-    this.title = title_;
-    this.author = author_;
-    this.numPages = numPages_;
+class Student {
+  var name;
+  var gpa;
+
+  Student(name_, gpa_) {
+    this.name = name_;
+    this.gpa = gpa_;
   }
 
-  var title;
-  var author;
-  var numPages;
+  hasHonors() {
+    return this.gpa >= 3.5;
+  }
 }
 
 void main() {
-  Book lotr = Book('Fellowship', 'JRRT', 554);
+  Student joe = Student('Joe', 2.54);
+  Student jolene = Student('Jolene', 3.95);
 
-  print(lotr.title);
-  print(lotr.author);
-  print(lotr.numPages);
+  print(joe.hasHonors());
+  print(jolene.hasHonors());
 }
