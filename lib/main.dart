@@ -28,12 +28,14 @@ void main() {
     MathQuestions('100 * 9', 900.0)
   ];
 
+  var score = 0;
+
   for (MathQuestions mathQuestion in questions) {
     var userAnswer = promptDouble(mathQuestion.question);
     if (userAnswer == mathQuestion.answer) {
-      print('Correct!');
-    } else {
-      print('Incorrect, the answer was ${mathQuestion.answer}');
+      score++;
     }
   }
+
+  print('You got ${score} out of ${questions.length} questions correct!');
 }
