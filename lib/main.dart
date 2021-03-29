@@ -29,6 +29,11 @@ void main() {
   ];
 
   for (MathQuestions mathQuestion in questions) {
-    promptDouble(mathQuestion.question);
+    var userAnswer = promptDouble(mathQuestion.question);
+    if (userAnswer == mathQuestion.answer) {
+      print('Correct!');
+    } else {
+      print('Incorrect, the answer was ${mathQuestion.answer}');
+    }
   }
 }
