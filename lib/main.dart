@@ -6,8 +6,8 @@ String promptText(String prompt) {
   return answer;
 }
 
-double promptDouble() {
-  print('Enter a number: ');
+double promptDouble(String prompt) {
+  print(prompt);
   var myNumber = double.parse(stdin.readLineSync());
   return myNumber;
 }
@@ -29,6 +29,6 @@ void main() {
   ];
 
   for (MathQuestions mathQuestion in questions) {
-    print(mathQuestion.question);
+    promptDouble(mathQuestion.question);
   }
 }
