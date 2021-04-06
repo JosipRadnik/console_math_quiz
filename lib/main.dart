@@ -25,7 +25,14 @@ void main() {
   List<MathQuestions> questions = [
     MathQuestions('3 + 5', 8.0),
     MathQuestions('10 - 7', 3.0),
-    MathQuestions('100 * 9', 900.0)
+    MathQuestions('100 * 9', 900.0),
+    MathQuestions('125 / 5', 25.0),
+    MathQuestions('457 + 224', 681.0),
+    MathQuestions('881 - 712', 169.0),
+    MathQuestions('128 * 129', 16512.0),
+    MathQuestions('999 / 333', 3.0),
+    MathQuestions('256 * 256 * 256', 16777216.0),
+    MathQuestions('2 * (488 / (2 * 122))', 4.0)
   ];
 
   var score = 0;
